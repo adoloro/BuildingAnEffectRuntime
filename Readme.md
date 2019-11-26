@@ -11,7 +11,12 @@ reveal-md slides.md -w --css css/fullscreen.css
 
 ```
 brew install scalacenter/bloop/bloop
-brew services start bloop
+brew services start bloop 
+```
+
+```
+resolvers += Resolver.sonatypeRepo("snapshots")
+addSbtPlugin("ch.epfl.scala" % "sbt-bloop" % "1.3.5")
 sbt bloopInstall
 
 bloop run runtime -m  com.github.runtologist.demo.DemoAdd
