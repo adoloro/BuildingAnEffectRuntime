@@ -10,8 +10,8 @@ reveal-md slides.md -w --css css/fullscreen.css
 # Run Examples
 
 ```
-brew install bloop
-brew service start bloop
+brew install scalacenter/bloop/bloop
+brew services start bloop
 sbt bloopInstall
 
 bloop run runtime -m  com.github.runtologist.demo.DemoAdd
